@@ -19,16 +19,6 @@ var curtain = new Hammer(document.getElementById("curtain"));
 
 var disectStart = false;
 
-// var blockEvent = false; // TODO: remove this
-
-// TODO: remove this
-/*var unBlockEvent = function() {
-  blockEvent = true;
-  setTimeout(function(){
-    blockEvent = false;
-  },1000);
-}; */
-
 /* Events */
 
 window.addEventListener('shake', resetLocalStorage, false);

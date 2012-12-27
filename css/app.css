@@ -144,7 +144,6 @@ section#spread.bottom {
   margin-top: 38px;
   width: 75px;
   font-weight: bold;
-//  text-shadow: 0 1px 1px #000;
   color: #fff;
 }
 #theme-list hr {
@@ -161,36 +160,3 @@ section#spread.bottom {
   background: -webkit-linear-gradient(top,#0c0,#090);
   color: #fff;
 }
-/*
-#theme-list .export {
-  padding: 12px;
-  width: 240px;
-  margin: 8px 4px;
-  position: absolute;
-  border-radius: 8px;
-  display: inline-block;
-  box-shadow: 0 1px 1px #000 inset;
-  background: #111;
-}
-#theme-list .export a {
-  display: block;
-  width: 240px;
-  height: 60px;
-  background: -webkit-linear-gradient(top,#0c0,#090);
-  box-shadow: 0 0 4px #0c0 inset;
-  border-radius: 4px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-}
-#theme-list .export a strong {
-  display: block;
-  font: bold 18px "Helvetica Neue";
-  text-shadow: 0 1px 0 #090;
-  padding-top: 10px;
-}
-#theme-list .export a small {
-  display: block;
-  font: normal 10px "Helvetica Neue";
-}
-*/

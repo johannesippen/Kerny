@@ -17,21 +17,6 @@ var detectDevice = function(){
   if(device.desktop) { document.body.setAttribute("data-device","desktop"); }
 };
 
-var quotes = [
-  'My baby dont mess around',
-  'Because she loves me so',
-  'And this I know for shooo...',
-  'Uh, But does she really wanna',
-  'But cant stand to see me',
-  'Walk out the dooor...',
-  'dont try to fight the feelin',
-  'Because the thought alone is killing me right nooww...',
-  'Uh, thank god for mom and dad',
-  'For sticking two together',
-  'Cause we dont know hooowww...',
-  'Shake it like a Polaroid Picture!'
-];
-
 /* Tutorial */
 
 var startTutorial = function(){
