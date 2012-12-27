@@ -59,9 +59,9 @@ spread.ondragend = function(e){
   posX = e.touches[0].x/window.innerWidth;
   posY = e.touches[0].y/window.innerHeight;
 
-  if(posX < .33 && posY > .66) {  
+  /* if(posX < .33 && posY > .66) {  
     alert("Disect Mode FTW!");
-  }
+  } */
   disectStart = false;
 };
 
