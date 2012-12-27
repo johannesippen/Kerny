@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rouse Viewer</title>
+  <!-- Styles -->
+  <link href="http://fonts.googleapis.com/css?family=Oswald:700,300" type="text/css" rel="stylesheet">
+  <link href="../css/viewer.css" type="text/css" rel="stylesheet">
+  <link href="../css/themes.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="">About</div>
+  </header>
+  <div id="bleed" class="">
+    <section id="spread" class="center middle"></section>
+  </div>
+  <footer><p>This has been made with <a href="http://www.asidemag.com/rouse/">Rouse</a>.</p></footer>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22558141-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="../js/importexport.js"></script>
+  <script>
+    importHTML(window.location.search.substring(1));
+  </script>
+</body>
+</html>

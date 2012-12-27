@@ -1,0 +1,157 @@
+#tutorial {
+  position: absolute;
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-radial-gradient(center, circle cover, rgba(0,0,0,.3) 0%,rgba(0,0,0,.9) 100%);
+  overflow: hidden;
+  display: none;
+}
+#tutorial.active {
+  display: block;
+}
+#tutorial.finished {
+  display: block;
+  -webkit-transform: scale(3,3);
+  opacity: 0;
+  -webkit-transition: all .2s ease-out;
+}
+#tutorial label {
+  position: absolute;
+  font: bold 18px "Helvetica Neue";
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+  -webkit-transform: scale(0,0);
+}
+
+@-webkit-keyframes edit {
+  0% {
+    -webkit-transform: scale(0,0);
+  }
+  90% {
+    -webkit-transform: scale(1.2,1.2);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+  }
+}
+@-webkit-keyframes resize {
+  0% {
+    -webkit-transform: scale(0,0);
+  }
+  40% {
+    -webkit-transform: scale(2,2);
+  }
+  90% {
+    -webkit-transform: scale(1.5,1.5);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+  }
+}
+@-webkit-keyframes align {
+  0% {
+    -webkit-transform: scale(1,1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  72% {
+    -webkit-transform: scale(1,1);
+  }
+  75% {
+    -webkit-transform: scale(.8,.8);
+  }
+  78% {
+    -webkit-transform: scale(1,1);
+  }
+  90% {
+    -webkit-transform: scale(1,1);
+  }
+  95% {
+    -webkit-transform: scale(.8,.8);
+  }
+  98% {
+    -webkit-transform: scale(1,1);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+  }
+}
+@-webkit-keyframes track {
+  0% {
+    -webkit-transform: scale(1,1);
+    opacity: 0;
+    letter-spacing: 10px;
+  }
+  100% {
+    letter-spacing: 0px;
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+  }
+}
+@-webkit-keyframes theme-menu {
+  0% {
+    -webkit-transform: translateY(-100px) scale(1,1);
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1,1);
+  }
+}
+@-webkit-keyframes start {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#tutorial.active label[data-label=edit] {
+  left: 50%;
+  top: 50%;
+  -webkit-animation: edit 1s 1s forwards;
+}
+#tutorial.active label[data-label=resize] {
+  right: 20%;
+  top: 20%;
+  -webkit-animation: resize 1s 3s forwards;
+}
+#tutorial.active label[data-label=align] {
+  left: 10%;
+  top: 10%;
+  -webkit-animation: align 1s 5s forwards;
+}
+#tutorial.active label[data-label=track] {
+  left: 40%;
+  bottom: 20%;
+  -webkit-animation: track 1s 7s forwards;
+  white-space: nowrap;
+}
+#tutorial.active label[data-label=theme-menu] {
+  right: 10%;
+  bottom: 10%;
+  -webkit-animation: theme-menu 1s 8s forwards;
+}
+#tutorial.active button {
+  -webkit-appearance: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 30px 0 0 -100px;
+  width: 200px;
+  height: 44px;
+  background: -webkit-linear-gradient(top,#0c0,#090);
+  box-shadow: 0 0 4px #0c0 inset, 0 1px 2px rgba(0,0,0,.4);
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font: bold 18px "Helvetica Neue";
+  text-shadow: 0 1px 0 #090;
+  -webkit-animation: start 1s 9s forwards;
+  border: 1px solid #060;
+  opacity: 0;
+}

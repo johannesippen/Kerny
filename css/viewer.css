@@ -1,0 +1,63 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  background: #eee;
+}
+header {
+  height: 60px;
+  background: -webkit-linear-gradient(top,#222,#111);
+}
+header div {
+  width: 640px;
+  text-align: right;
+  color: #333;
+  margin: 0 auto;
+  font: bold 16px/60px sans-serif;
+}
+div#bleed {
+  display: table;
+  width: 640px;
+  height: 640px;
+  font-size: 200%;
+  margin: 30px auto;
+}
+section#spread {
+  text-align: center;
+  display: table-cell;
+  font-weight: normal;
+  font-size: 1em;
+  padding: 21px;
+  height: 100%;
+  overflow: hidden;
+  -webkit-user-select: none;
+}
+#spread {
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 3px 9px -3px #999;
+}
+section#spread.left {
+  text-align: left;
+}
+section#spread.center {
+  text-align: center;
+}
+section#spread.right {
+  text-align: right;
+}
+section#spread.top {
+  vertical-align: top;
+}
+section#spread.middle {
+  vertical-align: middle;
+}
+section#spread.bottom {
+  vertical-align: bottom;
+}
+footer {
+  font: normal 12px sans-serif;
+  color: #aaa;
+  text-align: center;
+}
