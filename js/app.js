@@ -48,18 +48,6 @@ var resetLocalStorage = function(){
   alert('Database deleted');
 };
 
-/* ContextMenu */
-var openContextmenu = function(x,y){
-  contextmode = true;
-  contextMenu.style.left = x+'px';
-  contextMenu.style.top = y+'px';
-  document.body.setAttribute('class','context-menu');
-};
-var closeContextmenu = function(){
-  contextmode = false;
-  document.body.setAttribute('class','context-menu');
-};
-
 /* Check if this is on Homescreen */
 var checkHomescreen = function(){
   if(!window.navigator.standalone) {

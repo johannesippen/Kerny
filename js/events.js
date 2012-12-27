@@ -116,14 +116,6 @@ spread.ondoubletap = function(e){
   }
 };
 
-
-// TODO: remove this in case context menu isn't used
-/*spread.onhold = function(e) {
-  if(!editmode) {
-    openContextmenu(e.position[0].x,e.position[0].y);
-  }
-};*/
-
 var curtainTouch = function() {
   if(thememode) {
     document.body.setAttribute('class','');
