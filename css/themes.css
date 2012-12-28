@@ -1,81 +1,19 @@
-@import url(../fonts/scifly.css);
-@import url(../fonts/alex.css);
-@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800);
-@import url(../fonts/stmarie.css);
-@font-face {
-  font-family: 'Nexa';
-  src: local('x'), url(../fonts/NexaLight.otf)  format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Nexa';
-  src: local('x'), url(../fonts/NexaBold.otf)  format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Oranienbaum';
-  src: local('x'), url(../fonts/Oranienbaum.ttf)  format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'League';
-  src: local('x'), url(../fonts/LeagueGothic-Regular.otf)  format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'League';
-  src: local('x'), url(../fonts/LeagueGothic-Italic.otf)  format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Otama';
-  src: local('x'), url(../fonts/Otama-ep.otf)  format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-/* White */
+@import url(fonts.css);
+
+/* Slim */
 .white #spread {
   padding: 21px;
   font-family: "Oswald";
   background: beige;
   color: #fff;
-//  background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(218,218,200,1) 100%);
   text-transform: uppercase;
   font-weight: 300;
 }
 .white #spread strong {
   font-weight: 700;
-  font-size: 95.5%; // TODO: make this match;
+  font-size: 95.5%;
 }
-/* League */
-.league #spread {
-  padding: 21px;
-  font-family: "League";
-  color: #120;
-  background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(218,218,200,1) 100%);
-}
-.league #spread strong {
-}
-/* SciFly */
-.scifly #spread {
-  padding: 21px;
-  font-family: "SciFly";
-//  background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(200,218,218,1) 100%);
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #333;
-  background: #ffd91c;
-}
-.scifly #spread strong {
-  color: #fff;
-  font-weight: normal;
-}
+
 /* Nexa */
 .nexa #spread {
   padding: 21px;
@@ -87,6 +25,21 @@
 .nexa #spread strong {
   font-weight: bold;
 }
+
+/* Tech */
+.scifly #spread {
+  padding: 21px;
+  font-family: "SciFly";
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #333;
+  background: #ffd91c;
+}
+.scifly #spread strong {
+  color: #fff;
+  font-weight: normal;
+}
+
 /* Swiss */
 .swiss #spread {
   padding: 20px 0;
@@ -98,18 +51,8 @@
 .swiss #spread strong {
   font-weight: bold;
 }
-/* Translucent */
-.translucent #spread {
-  padding: 20px 0;
-  font-family: "Helvetica";
-  font-weight: normal;
-  background: -webkit-radial-gradient(center, ellipse cover, #333 40%,#000 100%);
-  color: rgba(255,255,255,.6);
-}
-.translucent #spread strong {
-  font-weight: bold;
-}
-/* WasIstDesign */
+
+/* Square */
 .alex #spread {
   padding: 21px 0;
   font-family: "WasIstDesign";
@@ -122,7 +65,8 @@
   color: #900;
   font-weight: normal;
 }
-/* Permanent */
+
+/* Hand */
 .permanent #spread {
   padding: 21px;
   font-family: "Permanent Marker";
@@ -134,7 +78,8 @@
   font-weight: 400;
   color: #0f0;
 }
-/* Light */
+
+/* Open */
 .light #spread {
   padding: 21px;
   font-family: "Open Sans";
@@ -146,7 +91,8 @@
   font-weight: 800;
   color: #fff;
 }
-/* St. Marie */
+
+/* Ultralight */
 .stmarie #spread {
   padding: 21px;
   font-family: "StMarie";
@@ -158,7 +104,8 @@
   font-weight: normal;
   color: lightyellow;
 }
-/* Classic */
+
+/* Serif */
 .oranienbaum #spread {
   padding: 20px 0;
   font-family: "Oranienbaum";
@@ -170,7 +117,8 @@
   font-weight: normal;
   color: orange;
 }
-/* Classic */
+
+/* Otama */
 .otama #spread {
   padding: 20px 0;
   font-family: "Otama";
@@ -182,18 +130,3 @@
   font-weight: normal;
   color: orange;
 }
-/* Thai */
-/*.thai #spread {
-  padding: 20px 0;
-  font-weight: normal;
-  background: url(../img/thai.jpg) no-repeat right center;
-  background-size: cover;
-  text-shadow: 0 1px 2px #000;
-  color: #fff;
-  font-family: 'Amatic SC';
-}
-.thai #spread strong {
-  text-shadow: none;
-  font-weight: normal;
-  color: #000;
-}*/

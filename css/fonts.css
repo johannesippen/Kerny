@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800|Permanent+Marker|Oswald:700,300); // TODO: make these local
+@import url(../fonts/scifly.css);
+@import url(../fonts/alex.css);
+@import url(../fonts/stmarie.css);
+@font-face {
+  font-family: 'Nexa';
+  src: local('x'), url(../fonts/NexaLight.otf)  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nexa';
+  src: local('x'), url(../fonts/NexaBold.otf)  format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oranienbaum';
+  src: local('x'), url(../fonts/Oranienbaum.ttf)  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Otama';
+  src: local('x'), url(../fonts/Otama-ep.otf)  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
