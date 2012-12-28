@@ -24,9 +24,7 @@
     <label data-label="theme-menu">Theme Menu</label>
     <button data-label="start">Get Started</button>
   </div>
-  <div id="preview">
-    Type Design <strong>in your Pocket.</strong>
-  </div>
+  <div id="preview"></div>
   <div class="curtain" id="curtain"></div>
   <div id="status"></div>
   <div id="bleed" class="white">
@@ -66,6 +64,7 @@
       // Stuff here only loads if App is not in Fullscreen
       document.write('<link href=\"./css/add2home.css\" rel=\"stylesheet\">')
       document.write('<sc'+'ript src=\"./js/add2home.js\"><\/script>');
+      document.getElementById('preview').innerHTML = '<img src="./img/Icon-72@2x.png"><h1><strong>Kerny</strong> Put it to your <br>Home Screen now!</h1>';
     }
   </script>
   <script src="./js/shake.js"></script>

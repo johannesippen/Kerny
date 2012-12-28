@@ -5,11 +5,12 @@
   display: none;
 }
 .preview {
-  background: #222;
+  background: -webkit-radial-gradient(circle,#27a3de,#082345);
+  background-size: cover;
 }
 #preview {
   display: none;
-  font: normal 24px/36px sans-serif;
+  font: normal 24px/36px "Open Sans", sans-serif;
   position: absolute;
   left: 0; right: 0; top: 0;
   text-align: center;
@@ -20,8 +21,20 @@
 .preview #preview {
   display: block;
 }
+.preview h1 {
+  font-size: 16px;
+  line-height: 24px;
+  width: 200px;
+  margin: 10px auto;
+  font-weight: normal;
+}
+.preview h1 strong {
+  font-weight: 700;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
 body[data-device=desktop].preview {
-  background: red;
 }
 #status {
   position: absolute;
