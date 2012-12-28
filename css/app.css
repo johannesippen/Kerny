@@ -76,7 +76,7 @@ section#spread {
   display: table-cell;
   font-weight: normal;
   font-size: 3em;
-  padding: 21px;
+  padding: 0;
   height: 100%;
   overflow: hidden;
 }

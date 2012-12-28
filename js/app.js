@@ -72,6 +72,9 @@ var enterEditmode = function(){
 var exitEditmode = function(){
   editmode = false;
   document.getElementById('spread').innerHTML = parseTextile(document.getElementById('spread').innerHTML);
+  if(document.getElementById('spread').innerHTML == "") {
+    document.getElementById('spread').innerHTML = "Enter some text";
+  }
   document.body.setAttribute('class','');
   saveToLocalStorage(1);
 };

@@ -1,8 +1,21 @@
 @import url(fonts.css);
 
+/* Alignment */
+#spread.left {
+  padding-left: 21px;
+}
+#spread.right {
+  padding-right: 21px;
+}
+#spread.top {
+  padding-top: 21px;
+}
+#spread.bottom {
+  padding-bottom: 21px;
+}
+
 /* Slim */
 .white #spread {
-  padding: 21px;
   font-family: "Oswald";
   background: beige;
   color: #fff;
@@ -16,7 +29,6 @@
 
 /* Nexa */
 .nexa #spread {
-  padding: 21px;
   font-family: "Nexa";
   background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(200,218,218,1) 100%);
   text-transform: uppercase;
@@ -28,7 +40,6 @@
 
 /* Tech */
 .scifly #spread {
-  padding: 21px;
   font-family: "SciFly";
   text-transform: uppercase;
   font-weight: normal;
@@ -42,7 +53,7 @@
 
 /* Swiss */
 .swiss #spread {
-  padding: 20px 0;
+  padding: 0!important;
   font-family: "Helvetica";
   font-weight: normal;
   background: #d00;
@@ -54,7 +65,6 @@
 
 /* Square */
 .alex #spread {
-  padding: 21px 0;
   font-family: "WasIstDesign";
   background: -webkit-radial-gradient(center, circle cover, white 40%,beige 100%);
   text-transform: uppercase;
@@ -68,7 +78,6 @@
 
 /* Hand */
 .permanent #spread {
-  padding: 21px;
   font-family: "Permanent Marker";
   font-weight: 400;
   background: -webkit-radial-gradient(center, circle cover, #121 40%,#000 100%);
@@ -81,7 +90,6 @@
 
 /* Open */
 .light #spread {
-  padding: 21px;
   font-family: "Open Sans";
   font-weight: 300;
   background: -webkit-radial-gradient(center, circle cover, #04c 40%,#01a 100%);
@@ -94,7 +102,6 @@
 
 /* Ultralight */
 .stmarie #spread {
-  padding: 21px;
   font-family: "StMarie";
   font-weight: normal;
   background: -webkit-radial-gradient(center, circle cover, #f0f 40%,#909 100%);
@@ -107,7 +114,6 @@
 
 /* Serif */
 .oranienbaum #spread {
-  padding: 20px 0;
   font-family: "Oranienbaum";
   font-weight: normal;
   background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(218,218,200,1) 100%);
@@ -120,7 +126,6 @@
 
 /* Otama */
 .otama #spread {
-  padding: 20px 0;
   font-family: "Otama";
   font-weight: normal;
   background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(218,218,200,1) 100%);
