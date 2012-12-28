@@ -3,9 +3,10 @@
 // window.alert('status: 2012-11-07-23:23');
 
 loadFromLocalStorage(1);
-checkHomescreen();
+// checkHomescreen();
 detectDevice();
 setThemeListWidth();
+checkOrientation();
 
 /* Start the Tutorial, only when: Mobile, Homescreen & localStorage empty */
 if(!device.desktop && window.navigator.standalone) {
@@ -22,6 +23,7 @@ var disectStart = false;
 /* Events */
 
 window.addEventListener('shake', resetLocalStorage, false);
+window.addEventListener('orientationchange', checkOrientation, false);
 
 spread.ondragstart = function(e){
   // Preparation for Disect-Mode:

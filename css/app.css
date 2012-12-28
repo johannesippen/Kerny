@@ -29,6 +29,7 @@ body[data-device=desktop].preview {
   font: normal 10px sans-serif;
   color: #fff;
 }
+// TODO: Remove
 #clear {
   position: absolute;
   background: rgba(0,0,0,.8);
@@ -43,6 +44,7 @@ body[data-device=desktop].preview {
   top: 10px; right: 10px;
   display: none;
 }
+// TODO: Remove
 .editmode #clear {
   display: block;
 }
@@ -93,6 +95,9 @@ section#spread.bottom {
 /* Editmode */
 .editmode #bleed {
   height: 53%;
+}
+body.editmode[data-device=ipad][data-orientation=portrait] #bleed {
+  height: 70%;
 }
 /* Theme Menu */
 #bleed {

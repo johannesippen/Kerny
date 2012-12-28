@@ -8,8 +8,8 @@ var device = new Object(); // TODO: Make this better
 
 var detectDevice = function(){
   device.ipad = (/iPad/).test(navigator.userAgent);
-  device.iphone = (/iPad|iPhone/).test(navigator.userAgent);
-  device.android = (/iPad|iPhone/).test(navigator.userAgent);
+  device.iphone = (/iPod|iPhone/).test(navigator.userAgent);
+  device.android = (/Android/).test(navigator.userAgent);
   device.desktop = !(/iPad|iPhone|Android/).test(navigator.userAgent);
   if(device.ipad)    { document.body.setAttribute("data-device","ipad"); }
   if(device.iphone)  { document.body.setAttribute("data-device","iphone"); }
@@ -40,6 +40,17 @@ var checkHomescreen = function(){
   }
 };
 
+var checkOrientation = function() {
+  if(window.orientation !== undefined) {
+    if(window.orientation == 0 || window.orientation == 180) {
+      document.body.setAttribute('data-orientation','portrait');
+    } else {
+      document.body.setAttribute('data-orientation','landscape');
+    }
+  }
+  stat(document.body.getAttribute("data-device")+' '+document.body.getAttribute("data-orientation"));
+};
+//TODO: Remove
 var writeQuote = function() {
   if(!editmode) {
     document.getElementById('spread').innerHTML = parseTextile(quotes[Math.floor(Math.random()*quotes.length)]); // TODO: replace by random tweet
