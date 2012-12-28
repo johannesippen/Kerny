@@ -34,6 +34,18 @@
   font-size: 24px;
   margin-bottom: 8px;
 }
+body[data-device=iphone][data-orientation=landscape] #preview {
+  padding-top: 0px;
+}
+body[data-device=iphone][data-orientation=portrait] #preview {
+  padding-top: 50px;
+}
+body[data-device=ipad][data-orientation=landscape] #preview {
+  padding-top: 200px;
+}
+body[data-device=ipad][data-orientation=portrait] #preview {
+  padding-top: 350px;
+}
 body[data-device=desktop].preview {
 }
 #status {
