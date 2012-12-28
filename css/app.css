@@ -131,8 +131,7 @@ body.editmode[data-device=ipad] #spread {
   border: 0;
   border-radius: 6px;
   box-shadow: 0 2px 4px #000;
-  background: url(../preview/theme2.png) no-repeat;
-  background-size: cover;
+  background: #eee;
   display: block;
   float: left;
 }
