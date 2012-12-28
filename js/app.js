@@ -50,10 +50,10 @@ var checkOrientation = function() {
   }
   stat(document.body.getAttribute("data-device")+' '+document.body.getAttribute("data-orientation"));
 };
-//TODO: Remove
-var writeQuote = function() {
+
+var writeText = function(text) {
   if(!editmode) {
-    document.getElementById('spread').innerHTML = parseTextile(quotes[Math.floor(Math.random()*quotes.length)]); // TODO: replace by random tweet
+    document.getElementById('spread').innerHTML = parseTextile(text);
     document.body.setAttribute('class','');
     saveToLocalStorage(1);    
   }

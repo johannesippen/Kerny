@@ -29,25 +29,6 @@ body[data-device=desktop].preview {
   font: normal 10px sans-serif;
   color: #fff;
 }
-// TODO: Remove
-#clear {
-  position: absolute;
-  background: rgba(0,0,0,.8);
-  font: normal 20px/20px sans-serif;
-  color: #fff;
-  text-align: center;
-  padding: 0;
-  width: 20px;
-  height: 20px;
-  border: none;
-  border-radius: 15px;
-  top: 10px; right: 10px;
-  display: none;
-}
-// TODO: Remove
-.editmode #clear {
-  display: block;
-}
 .curtain {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
