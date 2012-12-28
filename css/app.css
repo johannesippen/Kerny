@@ -74,11 +74,23 @@ section#spread.bottom {
   vertical-align: bottom;
 }
 /* Editmode */
-.editmode #bleed {
-  height: 53%;
+body.editmode[data-device=iphone][data-orientation=landscape] #bleed {
+  height: 139px;
+}
+body.editmode[data-device=iphone][data-orientation=portrait] #bleed {
+  height: 243px;
+}
+body.editmode[data-device=iphone] #spread {
+  padding-bottom: 33px;
+}
+body.editmode[data-device=ipad][data-orientation=landscape] #bleed {
+  height: 396px;
 }
 body.editmode[data-device=ipad][data-orientation=portrait] #bleed {
-  height: 70%;
+  height: 740px;
+}
+body.editmode[data-device=ipad] #spread {
+  padding-bottom: 44px;
 }
 /* Theme Menu */
 #bleed {
