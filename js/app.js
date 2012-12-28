@@ -10,7 +10,7 @@ var detectDevice = function(){
   device.ipad = (/iPad/).test(navigator.userAgent);
   device.iphone = (/iPod|iPhone/).test(navigator.userAgent);
   device.android = (/Android/).test(navigator.userAgent);
-  device.desktop = !(/iPad|iPhone|Android/).test(navigator.userAgent);
+  device.desktop = !(/iPad|iPod|iPhone|Android/).test(navigator.userAgent);
   if(device.ipad)    { document.body.setAttribute("data-device","ipad"); }
   if(device.iphone)  { document.body.setAttribute("data-device","iphone"); }
   if(device.android) { document.body.setAttribute("data-device","android"); }

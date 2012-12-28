@@ -64,7 +64,11 @@
       // Stuff here only loads if App is not in Fullscreen
       document.write('<link href=\"./css/add2home.css\" rel=\"stylesheet\">')
       document.write('<sc'+'ript src=\"./js/add2home.js\"><\/script>');
-      document.getElementById('preview').innerHTML = '<img src="./img/Icon-72@2x.png"><h1><strong>Kerny</strong> Put it to your <br>Home Screen now!</h1>';
+      if(!(/iPad|iPod|iPhone|Android/).test(navigator.userAgent)) {
+        document.getElementById('preview').innerHTML = '<img src="./img/Icon-72@2x.png"><h1><strong>Kerny</strong> Open this link on your iPhone or iPad!</h1>';
+      } else {
+        document.getElementById('preview').innerHTML = '<img src="./img/Icon-72@2x.png"><h1><strong>Kerny</strong> Put it to your <br>Home Screen now!</h1>';
+      }
     }
   </script>
   <script src="./js/shake.js"></script>
