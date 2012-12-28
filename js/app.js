@@ -48,7 +48,6 @@ var checkOrientation = function() {
       document.body.setAttribute('data-orientation','landscape');
     }
   }
-  stat(document.body.getAttribute("data-device")+' '+document.body.getAttribute("data-orientation"));
 };
 
 var writeText = function(text) {
