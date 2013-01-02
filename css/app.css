@@ -70,6 +70,10 @@ button#exiteditmode {
   position: absolute;
   top: 0;
   right: 0;
+  display: none;
+}
+body.editmode[data-device=android] button#exiteditmode {
+  display: block;
 }
 div#bleed {
   display: table;

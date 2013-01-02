@@ -9,9 +9,11 @@ setThemeListWidth();
 checkOrientation();
 
 /* Start the Tutorial, only when: Mobile, Homescreen & localStorage empty */
-if(!device.desktop && window.navigator.standalone) {
-  if(!localStorage.getItem("tutorialCompleted")) {
-    startTutorial();
+if(!device.desktop) {
+  if(device.android || window.navigator.standalone){
+    if(!localStorage.getItem("tutorialCompleted")) {
+      startTutorial();
+    }
   }
 }
 
@@ -135,4 +137,4 @@ document.getElementById('curtain').addEventListener('touchend', curtainTouch, fa
 document.getElementById('spread').addEventListener('focusin', enterEditmode, false);
 document.getElementById('spread').addEventListener('focusout', exitEditmode, false);
 
-document.getElementById('exiteditmode').addEventListener('touchend', androidSelect, false);
+document.getElementById('exiteditmode').addEventListener('click', exitEditmode, false);
