@@ -3,8 +3,8 @@
 // window.alert('status: 2012-11-07-23:23');
 
 loadFromLocalStorage(1);
-//checkHomescreen();
 detectDevice();
+checkHomescreen();
 setThemeListWidth();
 checkOrientation();
 

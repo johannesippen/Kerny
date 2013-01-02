@@ -35,8 +35,12 @@ var resetLocalStorage = function(){
 
 /* Check if this is on Homescreen */
 var checkHomescreen = function(){
-  if(!window.navigator.standalone) {
-    document.body.setAttribute('class','preview');
+  if(device.android) {
+    window.scrollTo(0,1);
+  } else {
+    if(!window.navigator.standalone) {
+      document.body.setAttribute('class','preview');
+    }
   }
 };
 
