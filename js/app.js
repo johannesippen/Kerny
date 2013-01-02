@@ -64,6 +64,7 @@ var writeText = function(text) {
 
 /* Edit Mode */
 var enterEditmode = function(){
+  document.getElementById('spread').focus();
   editmode = true;
   document.getElementById('spread').innerHTML = parseHTML(document.getElementById('spread').innerHTML);
   document.body.setAttribute('class','editmode');
@@ -71,6 +72,14 @@ var enterEditmode = function(){
     session.discovered.edit = true;
     track('session.discovered.edit');
   }
+};
+
+var androidSelect = function(){
+  window.setTimeout(
+    function(){
+      document.getElementById('spread').select();
+    },1000
+  );
 };
 
 var exitEditmode = function(){

@@ -134,3 +134,5 @@ document.getElementById('tutorial').addEventListener('click', removeTutorial, fa
 document.getElementById('curtain').addEventListener('touchend', curtainTouch, false);
 document.getElementById('spread').addEventListener('focusin', enterEditmode, false);
 document.getElementById('spread').addEventListener('focusout', exitEditmode, false);
+
+document.getElementById('exiteditmode').addEventListener('touchend', androidSelect, false);
