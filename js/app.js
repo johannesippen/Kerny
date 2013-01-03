@@ -1,5 +1,6 @@
 var thememode = false;
 var editmode = false;
+var disectmode = false;
 var contextmode = false;
 var fontsize = 1;
 
@@ -189,6 +190,33 @@ var openThemeMenu = function() {
 var setThemeListWidth = function() {
   themeListWidth = document.querySelectorAll('#theme-list button').length*92;
 };
+
+/* Disect Mode */
+
+var enterDisectmode = function() {
+  disectmode = true;
+  document.body.setAttribute('class','disectmode');
+};
+
+var rnd = function(){
+  return Math.floor(Math.random()*255);
+}
+
+var randomColor = function() {
+  document.getElementById('spread').style.color = 'rgb('+rnd()+','+rnd()+','+rnd()+')';
+  saveToLocalStorage(1);
+}
+
+var randomBackgroundColor = function() {
+  document.getElementById('spread').style.background = 'rgb('+rnd()+','+rnd()+','+rnd()+')';
+  saveToLocalStorage(1);
+}
+
+var randomHighlightColor = function() {
+  document.querySelectorAll('#spread strong')[0].style.color = 'rgb('+rnd()+','+rnd()+','+rnd()+')';
+  saveToLocalStorage(1);
+}
+
 
 /* Session Load */
 if(!session.started) {

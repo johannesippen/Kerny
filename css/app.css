@@ -227,3 +227,38 @@ button.share.active {
   text-align: center;
   font: bold 44px "Helvetica Neue";
 }
+/* Disect Mode */
+.disectmode .curtain {
+  bottom: 0;
+  display: block;
+}
+#disect-menu {
+  position: absolute;
+  top: 50px; left: 50px; right: 50px; bottom: 50%;
+  z-index: 32001;
+  display: none;
+}
+.disectmode #disect-menu {
+  display: block;
+}
+#disect-menu button {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  text-indent: -9999px;
+}
+#disect-menu button#disect_color {
+  background: #000;
+  top: 25%;
+  right: 0;
+}
+#disect-menu button#disect_background {
+  background: yellow;
+  top: 0;
+  left: 0;
+}
+#disect-menu button#disect_highlight {
+  background: #fff;
+  bottom: 0;
+  left: 50%;
+}

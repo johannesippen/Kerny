@@ -18,7 +18,7 @@ if(!device.desktop) {
 }
 
 var spread = new Hammer(document.getElementById("spread"),{
-  hold_timeout:300
+//  hold_timeout:300
 });
 var curtain = new Hammer(document.getElementById("curtain"));
 
@@ -33,7 +33,8 @@ spread.ondragstart = function(e){
   // Preparation for Disect-Mode:
   posX = e.position.x/window.innerWidth;
   posY = e.position.y/window.innerHeight;
-  if(posX > .9 && posY < .1) { disectStart = true; }
+  
+  if(posX > .8 && posY < .2) { disectStart = true; }
   
   startKerning = parseFloat(document.getElementById('spread').style.letterSpacing);
   if(!startKerning || startKerning == "normal") { startKerning = 0; }
@@ -65,9 +66,11 @@ spread.ondragend = function(e){
   posX = e.touches[0].x/window.innerWidth;
   posY = e.touches[0].y/window.innerHeight;
 
-  /* if(posX < .33 && posY > .66) {  
-    alert("Disect Mode FTW!");
-  } */
+  if(posX < .33 && posY > .66) {
+    if(disectStart) {
+      enterDisectmode();
+    }
+  }
   disectStart = false;
 };
 
@@ -128,6 +131,11 @@ var curtainTouch = function() {
     contextmode = false;
     return false;
   }
+  if(disectmode) {
+    document.body.setAttribute('class','');
+    disectmode = false;
+    return false;
+  }
 };
 
 [].forEach.call( document.querySelectorAll('#theme-list button.theme'), function(el) {
@@ -136,6 +144,12 @@ var curtainTouch = function() {
      saveToLocalStorage(1);
   }, false);
 });
+
+/* Disect Mode */
+document.getElementById('disect_color').addEventListener('click', randomColor, false);
+document.getElementById('disect_background').addEventListener('click', randomBackgroundColor, false);
+document.getElementById('disect_highlight').addEventListener('click', randomHighlightColor, false);
+/* Disect End */
 
 document.querySelector('button.share').addEventListener('click', exportHTML, false);
 document.getElementById('tutorial').addEventListener('click', removeTutorial, false);
