@@ -4,7 +4,7 @@
 
 loadFromLocalStorage(1);
 detectDevice();
-//checkHomescreen();
+checkHomescreen();
 setThemeListWidth();
 checkOrientation();
 

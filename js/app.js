@@ -75,14 +75,6 @@ var enterEditmode = function(){
   }
 };
 
-var androidSelect = function(){
-  window.setTimeout(
-    function(){
-      document.getElementById('spread').select();
-    },1000
-  );
-};
-
 var exitEditmode = function(){
   editmode = false;
   document.getElementById('spread').setAttribute('contenteditable','false');
