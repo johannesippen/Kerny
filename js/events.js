@@ -4,7 +4,7 @@
 
 loadFromLocalStorage(1);
 detectDevice();
-checkHomescreen();
+//checkHomescreen();
 setThemeListWidth();
 checkOrientation();
 
@@ -129,7 +129,7 @@ var curtainTouch = function() {
   }, false);
 });
 
-document.querySelector('.share button').addEventListener('click', exportHTML, false);
+document.querySelector('button.share').addEventListener('click', exportHTML, false);
 document.getElementById('tutorial').addEventListener('click', removeTutorial, false);
 document.getElementById('curtain').addEventListener('touchend', curtainTouch, false);
 document.getElementById('spread').addEventListener('focusin', enterEditmode, false);
