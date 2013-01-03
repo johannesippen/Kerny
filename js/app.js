@@ -165,16 +165,18 @@ var setKerning = function(kerning) {
 
 /* Font Size */
 var setFontSize = function(fontsize) {
-  fontsize = startFontSize*fontsize;
-  if(fontsize <= 0.1) {
-    fontsize = 0.1;
+  if(!device.android) {
+    fontsize = startFontSize*fontsize;
+    if(fontsize <= 0.1) {
+      fontsize = 0.1;
+    }
+    document.getElementById('spread').style.fontSize = fontsize+"em";
+    if(!session.discovered.fontSize) {
+      session.discovered.fontSize = true;
+      track('session.discovered.fontSize');
+    }
+    saveToLocalStorage(1);
   }
-  document.getElementById('spread').style.fontSize = fontsize+"em";
-  if(!session.discovered.fontSize) {
-    session.discovered.fontSize = true;
-    track('session.discovered.fontSize');
-  }
-  saveToLocalStorage(1);
 };
 
 /* Theme Menu */

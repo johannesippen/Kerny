@@ -1,5 +1,10 @@
 @import url(fonts.css);
 
+/* Android without Gradients */
+body[data-device=android] #spread {
+  background-image: none!important;
+}
+
 /* Alignment */
 #spread.left {
   padding-left: 21px;

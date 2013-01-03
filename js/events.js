@@ -17,7 +17,9 @@ if(!device.desktop) {
   }
 }
 
-var spread = new Hammer(document.getElementById("spread"));
+var spread = new Hammer(document.getElementById("spread"),{
+  hold_timeout:300
+});
 var curtain = new Hammer(document.getElementById("curtain"));
 
 var disectStart = false;
@@ -70,21 +72,18 @@ spread.ondragend = function(e){
 };
 
 spread.ontransformstart = function(e) {
-  startFontSize = parseFloat(document.getElementById('spread').style.fontSize);
-  if(!startFontSize || startFontSize == "normal") { 
-    document.getElementById('spread').style.fontSize = "1em";
-    startFontSize = 1;
+  if(!device.android) {
+    startFontSize = parseFloat(document.getElementById('spread').style.fontSize);
+    if(!startFontSize || startFontSize == "normal") { 
+      document.getElementById('spread').style.fontSize = "1em";
+      startFontSize = 1;
+    }
   }
 };
 
 spread.ontransform = function(e) {
   setFontSize(e.scale);
 };
-
-spread.ontap = function(e) {
-  enterEditmode();
-};
-
 
 spread.ondoubletap = function(e){
   posX = e.position[0].x/window.innerWidth;
@@ -141,7 +140,22 @@ var curtainTouch = function() {
 document.querySelector('.share button').addEventListener('click', exportHTML, false);
 document.getElementById('tutorial').addEventListener('click', removeTutorial, false);
 document.getElementById('curtain').addEventListener('touchend', curtainTouch, false);
-document.getElementById('spread').addEventListener('focusin', enterEditmode, false);
-document.getElementById('spread').addEventListener('focusout', exitEditmode, false);
 
-document.getElementById('exiteditmode').addEventListener('click', exitEditmode, false);
+/* Android Fixes */
+if(device.android) {
+  // First - remove contenteditable
+  document.getElementById('spread').setAttribute('contenteditable','false');
+  
+  // Add Hold(300ms) Eventlistener
+  spread.onhold = function(e) {
+    enterEditmode();
+  };
+  
+  // Exit mode Button 
+  document.getElementById('exiteditmode').addEventListener('click', exitEditmode, false);
+    
+} else {
+  // Here comes the Standard (iOS)
+  document.getElementById('spread').addEventListener('focusin', enterEditmode, false);
+  document.getElementById('spread').addEventListener('focusout', exitEditmode, false);
+}
