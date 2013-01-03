@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800|Permanent+Marker|Oswald:700,300); // TODO: make these local
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800|Permanent+Marker|Oswald:700,300);
 @import url(../fonts/scifly.css);
 @import url(../fonts/alex.css);
 @import url(../fonts/stmarie.css);
@@ -23,6 +23,42 @@
 @font-face {
   font-family: 'Otama';
   src: local('x'), url(../fonts/Otama-ep.otf)  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Otama';
+  src: local('x'), url(../fonts/Otama-ep.otf)  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Archive';
+  src: url(../fonts/archive.otf)  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rawengulk';
+  src: url(../fonts/rawengulk.otf)  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noticia';
+  src: url(../fonts/NoticiaText-Regular.ttf)  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noticia';
+  src: url(../fonts/NoticiaText-Bold.ttf)  format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Valentina';
+  src: url(../fonts/Valentina.otf)  format('truetype');
   font-weight: normal;
   font-style: normal;
 }

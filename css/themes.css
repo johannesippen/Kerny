@@ -13,12 +13,16 @@
 #spread.bottom {
   padding-bottom: 21px;
 }
+#spread {
+  background-image: -webkit-radial-gradient(center,rgba(0,0,0,0),rgba(0,0,0,0.2));
+  background-size: contain;
+}
 
 /* Slim */
 .white #spread {
   font-family: "Oswald";
-  background: beige;
-  color: #fff;
+  background-color: #eee8d5;
+  color: #fdf6e3;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -26,16 +30,23 @@
   font-weight: 700;
   font-size: 95.5%;
 }
+#theme-list button[data-theme=white] {
+  background-color: #eee8d5;
+}
 
 /* Nexa */
 .nexa #spread {
   font-family: "Nexa";
-  background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(200,218,218,1) 100%);
+  background-color: #fdf6e3;
   text-transform: uppercase;
   font-weight: normal;
+  color: #002b36;
 }
 .nexa #spread strong {
   font-weight: bold;
+}
+#theme-list button[data-theme=nexa] {
+  background-color: #fdf6e3;
 }
 
 /* Tech */
@@ -43,12 +54,15 @@
   font-family: "SciFly";
   text-transform: uppercase;
   font-weight: normal;
-  color: #333;
-  background: #ffd91c;
+  color: #002b36;
+  background-color: #b58900;
 }
 .scifly #spread strong {
-  color: #fff;
+  color: #fdf6e3;
   font-weight: normal;
+}
+#theme-list button[data-theme=scifly] {
+  background-color: #b58900;
 }
 
 /* Swiss */
@@ -56,82 +70,103 @@
   padding: 0!important;
   font-family: "Helvetica";
   font-weight: normal;
-  background: #d00;
-  color: #fff;
+  background-color: #dc322f;
+  color: #fdf6e3;
 }
 .swiss #spread strong {
   font-weight: bold;
+}
+#theme-list button[data-theme=swiss] {
+  background-color: #dc322f;
 }
 
 /* Square */
 .alex #spread {
   font-family: "WasIstDesign";
-  background: -webkit-radial-gradient(center, circle cover, white 40%,beige 100%);
+  background-color: #cb4b16;
   text-transform: uppercase;
   font-weight: normal;
-  color: #100;
+  color: #fdf6e3;
 }
 .alex #spread strong {
-  color: #900;
+  color: #002b36;
   font-weight: normal;
+}
+#theme-list button[data-theme=alex] {
+  background-color: #cb4b16;
 }
 
 /* Hand */
 .permanent #spread {
   font-family: "Permanent Marker";
   font-weight: 400;
-  background: -webkit-radial-gradient(center, circle cover, #121 40%,#000 100%);
-  color: #fff;
+  background-color: #6c71c4;
+  color: #fdf6e3;
 }
 .permanent #spread strong {
   font-weight: 400;
-  color: #0f0;
+  color: #002b36;
+}
+#theme-list button[data-theme=permanent] {
+  background-color: #6c71c4;
 }
 
 /* Open */
 .light #spread {
   font-family: "Open Sans";
   font-weight: 300;
-  background: -webkit-radial-gradient(center, circle cover, #04c 40%,#01a 100%);
-  color: #fff;
+  background-color: #268bd2;
+  color: #fdf6e3;
 }
 .light #spread strong {
   font-weight: 800;
-  color: #fff;
+  color: #fdf6e3;
+}
+#theme-list button[data-theme=light] {
+  background-color: #268bd2;
+}
+
+/* Open */
+.noticia #spread {
+  font-family: "Noticia";
+  font-weight: normal;
+  background-color: #2aa198;
+  color: #fdf6e3;
+}
+.noticia #spread strong {
+  font-weight: bold;
+  color: #fdf6e3;
+}
+#theme-list button[data-theme=noticia] {
+  background-color: #2aa198;
 }
 
 /* Ultralight */
 .stmarie #spread {
   font-family: "StMarie";
   font-weight: normal;
-  background: -webkit-radial-gradient(center, circle cover, #f0f 40%,#909 100%);
-  color: #fff;
+  background-color: #d33682;
+  color: #fdf6e3;
 }
 .stmarie #spread strong {
   font-weight: normal;
-  color: lightyellow;
+  color: #002b36;
 }
-
-/* Serif */
-.oranienbaum #spread {
-  font-family: "Oranienbaum";
-  font-weight: normal;
-  background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(218,218,200,1) 100%);
-  color: #000;
-}
-.oranienbaum #spread strong {
-  font-weight: normal;
-  color: orange;
+#theme-list button[data-theme=stmarie] {
+  background-color: #d33682;
 }
 
 /* Otama */
 .otama #spread {
   font-family: "Otama";
   font-weight: normal;
-  background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(218,218,200,1) 100%);
-  color: #000;
+  background-color: #859900;
+  color: #002b36;
 }
 .otama #spread strong {
   font-weight: normal;
-  color: orange;
+  color: #fdf6e3;
+}
+#theme-list button[data-theme=otama] {
+  background-color: #859900;
 }
