@@ -181,13 +181,20 @@ button.share {
   background: -webkit-linear-gradient(top,#0c0,#090);
   color: #fff;
   margin: 8px;
-  padding: 9px 20px;
+  padding: 9px 20px 9px 48px;
   border: 1px solid #060;
   box-shadow: 0 0 4px #0c0 inset, 0 1px 2px rgba(0,0,0,.4);
   text-shadow: 0 1px 0 #090;
   text-align: center;
   border-radius: 4px;
   font: bold 12px "Helvetica Neue";
+}
+button.share img {
+  width: 26px;
+  height: 26px;
+  float: left;
+  position: absolute;
+  margin: -5px 0 0 -32px;
 }
 button.share.active {
   background: -webkit-linear-gradient(top,#090,#0c0);
