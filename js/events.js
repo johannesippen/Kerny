@@ -81,6 +81,11 @@ spread.ontransform = function(e) {
   setFontSize(e.scale);
 };
 
+spread.ontap = function(e) {
+  enterEditmode();
+};
+
+
 spread.ondoubletap = function(e){
   posX = e.position[0].x/window.innerWidth;
   posY = e.position[0].y/window.innerHeight;
@@ -106,7 +111,9 @@ spread.ondoubletap = function(e){
   if(!editmode) {
     setTextPosition(posX+' '+posY);	
   } else {
-    clearSpread();
+    if(!device.android) {
+      clearSpread();
+    }
   }
 };
 

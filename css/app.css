@@ -126,6 +126,9 @@ body.editmode[data-device=ipad][data-orientation=portrait] #bleed {
 body.editmode[data-device=ipad] #spread {
   padding-bottom: 44px;
 }
+body.editmode[data-device=android][data-orientation=portrait] #bleed {
+  height: 55%; // TODO: improve this
+}
 /* Theme Menu */
 #bleed {
 }
