@@ -14,15 +14,15 @@
   padding-bottom: 21px;
 }
 #spread {
-  background-image: -webkit-radial-gradient(center,rgba(0,0,0,0),rgba(0,0,0,0.2));
+  background-image: -webkit-radial-gradient(center, circle cover, rgba(0,0,0,0) 40%,rgba(0,0,0,0.3) 100%);
   background-size: contain;
 }
 
 /* Slim */
 .white #spread {
   font-family: "Oswald";
-  background-color: #eee8d5;
-  color: #fdf6e3;
+  background-image: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1),#eee8d5);
+  color: #002b36;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -37,7 +37,7 @@
 /* Nexa */
 .nexa #spread {
   font-family: "Nexa";
-  background-color: #fdf6e3;
+  background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,1) 40%,rgba(200,218,218,1) 100%);
   text-transform: uppercase;
   font-weight: normal;
   color: #002b36;
@@ -46,7 +46,7 @@
   font-weight: bold;
 }
 #theme-list button[data-theme=nexa] {
-  background-color: #fdf6e3;
+  background-color: rgb(200,218,218);
 }
 
 /* Tech */
@@ -55,7 +55,8 @@
   text-transform: uppercase;
   font-weight: normal;
   color: #002b36;
-  background-color: #b58900;
+  background-color: #e5ac00;
+  background-image: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,.6),rgba(255,255,255,0));
 }
 .scifly #spread strong {
   color: #fdf6e3;
