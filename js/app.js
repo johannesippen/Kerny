@@ -64,8 +64,10 @@ var writeText = function(text) {
 
 /* Edit Mode */
 var enterEditmode = function(){
-  document.getElementById('spread').setAttribute('contenteditable','true');
-  document.getElementById('spread').focus();
+  if(device.android) {
+    document.getElementById('spread').setAttribute('contenteditable','true');
+    document.getElementById('spread').focus();
+  }
   editmode = true;
   document.getElementById('spread').innerHTML = parseHTML(document.getElementById('spread').innerHTML);
   document.body.setAttribute('class','editmode');
@@ -76,8 +78,10 @@ var enterEditmode = function(){
 };
 
 var exitEditmode = function(){
+  if(device.android) {
+    document.getElementById('spread').setAttribute('contenteditable','false');
+  }
   editmode = false;
-  document.getElementById('spread').setAttribute('contenteditable','false');
   document.getElementById('spread').innerHTML = parseTextile(document.getElementById('spread').innerHTML);
   if(document.getElementById('spread').innerHTML == "") {
     document.getElementById('spread').innerHTML = "Enter some text";

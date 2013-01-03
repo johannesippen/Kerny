@@ -156,7 +156,7 @@ body.editmode[data-device=android][data-orientation=portrait] #spread {
 }
 #theme-list {
   padding: 0 10px;
-  width: 1310px; // TODO: Make this the right width;
+  width: 914px;
   overflow: hidden;
 }
 #theme-list button {
@@ -167,8 +167,9 @@ body.editmode[data-device=android][data-orientation=portrait] #spread {
   padding: 0;
   border: 0;
   border-radius: 6px;
-  box-shadow: 0 2px 4px #000;
+  box-shadow: 0 0 4px rgba(255,255,255,.2) inset, 0 2px 4px #000;
   background-color: #eee;
+  background-image: -webkit-linear-gradient(top,rgba(255,255,255,.2),rgba(255,255,255,0));
   display: block;
   float: left;
 }
@@ -216,4 +217,13 @@ button.share.active {
 .theme-menu button.share {
   display: block;
   z-index: 32001;
+}
+/* More Button */
+#theme-list button.addMore {
+  background: -webkit-linear-gradient(top,#333,#222);
+  color: #000;
+  box-shadow: 0 0 4px #333 inset, 0 2px 4px #000;
+  text-shadow: 0 -1px 0 #333;
+  text-align: center;
+  font: bold 44px "Helvetica Neue";
 }
