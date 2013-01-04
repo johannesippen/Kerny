@@ -1,0 +1,43 @@
+CACHE MANIFEST
+
+#version 1.0 1-4-2013
+
+CACHE:
+
+#images
+./img/export.png
+
+#internal HTML documents
+./index.html
+
+#style sheets
+http://fonts.googleapis.com/css?family=Open+Sans:300,800|Permanent+Marker|Oswald:700,300
+./css/add2home.css
+./css/app.css
+./css/fonts.css
+./css/themes.css
+./css/tutorial.css
+./fonts/alex.css
+./fonts/scifly.css
+./fonts/stmarie.css
+./fonts/NexaLight.ttf
+./fonts/NexaBold.ttf
+./fonts/Otama-ep.otf
+./fonts/NoticiaText-Regular.ttf
+./fonts/NoticiaText-Bold.ttf
+
+#style sheet images
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAQAAABDj1eZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUdJREFUKFNtkLtLw1AYxS/qJLhXVKr2ZRulUNtiqgSb3CziICI6ucTFVYcOnaQOFRwUnNTRwUWXgpP/QdHNUEQUHGxofYBTlRs83iZNjKTncOGe7/vx3QchXUWn6FL3jhfKUdCCr5zuifV5oDiHQM+c+CIhiiCSWNu08iq9oHXKLAiqrgR4UXqlOEYZt++ExEL0wW7+OW0G10muLv9gmqfe5FAWKmTMYQYiFL7PYwyLOD8lSjNh2gdnPzMII4QUBxc4OothbAF7GCBKQ0YbSWyPQsIhqvetS+y0ygGMo/KFZfviDvR4AhwgZU9dGYnA0J/6ndc15i3ouYIMcVVUcEXIoOxCeRCfwP8sXBSdjtpUv/1QW+K16kCCIUC4id9Fa0JtkluwVkSfqPL6RwfSDA0aNlx7k/bWgViB7bMS2/1vk5sdsZLN/ALSuL3tylO4RAAAAABJRU5ErkJggg==
+
+#javascript files
+http://www.google-analytics.com/ga.js
+./js/add2home.js
+./js/shake.js
+./js/tracking.js
+./js/hammer.js
+./js/app.js?201010
+./js/importexport.js
+./js/events.js?201011
+
+NETWORK:
+*
