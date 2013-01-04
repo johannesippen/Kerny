@@ -1,64 +1,69 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800|Permanent+Marker|Oswald:700,300);
 @import url(../fonts/scifly.css);
 @import url(../fonts/alex.css);
-@import url(../fonts/stmarie.css);
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald-Light.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Nexa';
-  src: local('x'), url(../fonts/NexaLight.ttf)  format('truetype');
+  src: url(../fonts/NexaLight.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Nexa';
-  src: local('x'), url(../fonts/NexaBold.ttf)  format('truetype');
+  src: url(../fonts/NexaBold.ttf) format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Oranienbaum';
-  src: local('x'), url(../fonts/Oranienbaum.ttf)  format('truetype');
+  font-family: 'StMarie';
+  src: url('../fonts/StMarie-Thin-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Otama';
-  src: local('x'), url(../fonts/Otama-ep.otf)  format('truetype');
+  font-family: 'Permanent Marker';
+  src: url(../fonts/PermanentMarker.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Otama';
-  src: local('x'), url(../fonts/Otama-ep.otf)  format('truetype');
-  font-weight: normal;
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-Light.ttf) format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Archive';
-  src: url(../fonts/archive.otf)  format('truetype');
-  font-weight: normal;
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-ExtraBold.ttf) format('truetype');
+  font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Rawengulk';
-  src: url(../fonts/rawengulk.otf)  format('truetype');
+  font-family: 'Noticia';
+  src: url(../fonts/NoticiaText-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Noticia';
-  src: url(../fonts/NoticiaText-Regular.ttf)  format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Noticia';
-  src: url(../fonts/NoticiaText-Bold.ttf)  format('truetype');
+  src: url(../fonts/NoticiaText-Bold.ttf) format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Valentina';
-  src: url(../fonts/Valentina.otf)  format('truetype');
+  font-family: 'Otama';
+  src: url(../fonts/Otama-ep.otf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
