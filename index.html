@@ -1,80 +1,179 @@
 <!DOCTYPE html>
-<html manifest="./manifest.appcache">
+<html>
 <head>
-  <title>Kerny</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  <meta name="apple-mobile-web-app-capable" content="yes"/>
-  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-  <link rel="apple-touch-startup-image" href="./img/iPhone@2x.png" />
-  <link rel="apple-touch-icon-precomposed" href="./img/Icon-72.png" sizes="72x72"/>
-  <link rel="apple-touch-icon-precomposed" href="./img/Icon-72@2x.png" sizes="144x144"/>
-  <link rel="apple-touch-icon-precomposed" href="./img/Icon@2X.png" />
-  <!-- Styles -->
-  <link href="./css/app.css" type="text/css" rel="stylesheet">
-  <link href="./css/themes.css" type="text/css" rel="stylesheet">
-  <link href="./css/tutorial.css" type="text/css" rel="stylesheet">
+  <title>Kerny App</title>
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800);
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: #002b36;
+      margin: 0;
+      padding: 0;
+    }
+    header, section {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding: 64px 0 32px;
+    }
+    section {
+      padding: 32px 0;
+      clear: left;
+    }
+    h1 {
+      text-align: center;
+    }
+    h1, h2 {
+      font-weight: 300;
+    }
+    h1 strong, h2 strong {
+      display: block;
+      font-weight: 800;
+      font-size: 120%;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+    .feature {
+      width: 25%;
+      float: left;
+      text-align: center;
+    }
+    .feature h2 {
+      margin-right: 2px;
+    }
+    .feature p {
+      margin: 0 18px 16px 20px;
+    }
+    .kickstarter + .cta {
+      padding: 64px 0 128px;
+    }
+    .kickstarter h1 {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .kickstarter .feature {
+      text-align: left;
+    }
+    .kickstarter .feature h2 {
+      margin: 0 18px 16px 20px;
+    }
+    .pro {
+      background: -webkit-linear-gradient(top,#fefef2,#fff);
+    }
+    .cta {
+      clear: left;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .cta h1 {
+      padding-bottom: 16px;
+    }
+    .cta a {
+      -webkit-appearance: none;
+      height: 44px;
+      padding: 16px 64px;
+      background: -webkit-linear-gradient(top,#0c0,#090);
+      box-shadow: 0 0 4px #0c0 inset, 0 1px 2px rgba(0,0,0,.4);
+      border-radius: 4px;
+      color: #fff;
+      font-size: 150%;
+      font-weight: 800;
+      text-shadow: 0 1px 2px #000;
+      text-decoration: none;
+      border: 1px solid #060;
+      margin: 0 16px;
+    }
+    .cta a.secondary {
+      background: -webkit-linear-gradient(top,#ccc,#999);
+      border: 1px solid #666;
+      box-shadow: 0 0 4px #ccc inset, 0 1px 2px rgba(0,0,0,.4);
+    }
+    #promo img {
+      width: 100%;
+    }
+    .themes ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .themes ul li {
+      float: left;
+      width: 180px;
+      margin: 10px;
+    }
+    .themes ul li img {
+      width: 100%;
+    }
+    /* Screenshots */
+    img.screenshot {
+      width: 228px;
+      height: 406px;
+      border-style: solid;
+      border-width: 84px 21px 86px 23px;
+      -webkit-border-image: url(./preview/iphone.jpg) 84 21 86 23 stretch stretch;
+      margin: 12px;
+    }
+    .themes, .pro {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <button id="exiteditmode">&times;</button>
-  <button class="share"><img src="img/export.png">Export</button>
-  <div id="tutorial">
-    <label data-label="edit">Tap to Edit</label>
-    <label data-label="align">Doubletap to Align</label>
-    <label data-label="resize">Pinch to Resize</label>
-    <label data-label="track">Drag to Track &amp; Lead</label>
-    <label data-label="theme-menu">Theme Menu</label>
-    <button data-label="start">Get Started</button>
+  <header>
+    <a href="./app/"><img src="./preview/iTunesArtwork.png" width="256"></a>
+    <h1><strong>Kerny</strong>The Design Tool you&rsquo;ve always been missing.</h1>
+  </header>
+  <section id="promo"><img src="./preview/product_shot.jpg" alt="Good Design"></section>
+  <section>
+    <div class="feature"><h2><strong>Typography</strong> in your Pocket</h2><p>Kerny is the missing design tool for iPhone, iPad and Android. Whenever creativity hits you, Kerny is there to the rescue. </p></div>
+    <div class="feature"><h2><strong>Themes</strong> for all Seasons</h2><p>Selecting Typefaces has never been so easy. Kerny comes with 10 stunning fonts, easily choosable from the invisible Theme Menu. </p></div>
+    <div class="feature"><h2><strong>Track &amp; Lead</strong> like a Pro</h2><p>Typographic design is all about the whitespace. Track, lead and align your design with the tip of your finger.</p></div>
+    <div class="feature"><h2><strong>Share</strong> your Designs!</h2><p>Share your creation with others or yourself. Kerny lets you export as a HTML page </p></div>
+    <!-- p>Kerny is the missing design tool for iPhone, iPad and Android. Whenever creativity hits you, Kerny is there to the rescue. It's as easy as Instagram. Just enter your headline-, logotype-, poster-, quote- or whatever-idea, choose from one of the predefined themes and apply some leading, tracking &amp; positioning. Export your design as HTML, PDF and PNG - or just take a screenshot and share it on Twitter, Dribbble and Facebook.</p -->
+  </section>
+  <section>
+    <img class="screenshot" src="./preview/screen1.png" alt="Enter Text">
+    <img class="screenshot" src="./preview/screen2.png" alt="Select from Theme">
+    <img class="screenshot" src="./preview/screen3.png" alt="Kern &amp; Track">
+    <img class="screenshot" src="./preview/screen4.png" alt="Export">
+  </section>
+  <section class="cta">
+    <h1>The best part is - it's free! Just click on the Button below <br>&amp; add Kerny to the Home Screen of your iPhone, iPad or iPod Touch:</h1>
+    <a href="./app/">Get Kerny for Free</a>
+  </section>
+  <section class="themes">
+    <h1>Say Hello to the Kerny Theme Family:</h1>
+    <ul>
+      <li><img src="./preview/theme1.png" alt="Export"></li>
+      <li><img src="./preview/theme2.png" alt="Export"></li>
+      <li><img src="./preview/theme2.png" alt="Export"></li>
+      <li><img src="./preview/theme2.png" alt="Export"></li>
+      <li><img src="./preview/theme2.png" alt="Export"></li>
+      <li><img src="./preview/theme2.png" alt="Export"></li>
+      <li><img src="./preview/theme2.png" alt="Export"></li>
+      <li><img src="./preview/theme2.png" alt="Export"></li>
+      <li><img src="./preview/theme2.png" alt="Export"></li>
+      <li><img src="./preview/theme2.png" alt="Export"></li>
+    </ul>
+  </section>
+    <div class="pro">
+  <section class="kickstarter">
+    <h1><strong>Kerny Pro</strong> If you like Kerny, you would love to have these Features</h1>
+    <div class="feature"><h2>Export to PDF, Illustrator and PNG</h2><p>Kerny is the missing design tool for iPhone, iPad and Android. Whenever creativity hits you, Kerny is there to the rescue. </p></div>
+    <div class="feature"><h2>Create Custom Themes</h2><p>Kerny is the missing design tool for iPhone, iPad and Android. Whenever creativity hits you, Kerny is there to the rescue. </p></div>
+    <div class="feature"><h2>Add More Fonts</h2><p>Kerny is the missing design tool for iPhone, iPad and Android. Whenever creativity hits you, Kerny is there to the rescue. </p></div>
+    <div class="feature"><h2>Share to Facebook, Dribbble &amp; Co.</h2><p>Kerny is the missing design tool for iPhone, iPad and Android. Whenever creativity hits you, Kerny is there to the rescue. </p></div>
+    <div class="feature"><h2>Save &amp; Load your Designs</h2><p>Kerny is the missing design tool for iPhone, iPad and Android. Whenever creativity hits you, Kerny is there to the rescue. </p></div>
+    <div class="feature"><h2>Apply Custom Kerning &amp; Ligatures</h2><p>Kerny is the missing design tool for iPhone, iPad and Android. Whenever creativity hits you, Kerny is there to the rescue. </p></div>
+    <div class="feature"><h2>Work on your Desktop</h2><p>Kerny is the missing design tool for iPhone, iPad and Android. Whenever creativity hits you, Kerny is there to the rescue. </p></div>
+  </section>
+  <section class="cta">
+    <a href="./pro/">Learn more about Kerny Pro</a><a href="./app/" class="secondary">Get Kerny for Free</a>
+  </section>
   </div>
-  <div id="preview"></div>
-  <div class="curtain" id="curtain"></div>
-  <div id="status"></div>
-  <div id="bleed" class="white">
-    <section id="spread" class="center middle" contenteditable="true">Mobile Design is just <strong>one tap</strong> away.</section>
-  </div>
-  <nav id="themes">
-    <div id="theme-list">
-      <button style="" class="theme" data-theme="white"><span>Slim</button>
-      <button style="" class="theme" data-theme="nexa"><span>Nexa</button>
-      <button style="" class="theme" data-theme="scifly"><span>Tech</button>
-      <button style="" class="theme" data-theme="alex"><span>Square</button>
-      <button style="" class="theme" data-theme="swiss"><span>Swiss</button>
-      <button style="" class="theme" data-theme="stmarie"><span>Ultralight</button>
-      <button style="" class="theme" data-theme="permanent"><span>Hand</button>
-      <button style="" class="theme" data-theme="light"><span>Open</button>
-      <button style="" class="theme" data-theme="noticia"><span>Noticia</button>
-      <button style="" class="theme" data-theme="otama"><span>Otama</button>
-      <button class="addMore" disabled>+</button>
-      <hr>
-    </div>
-  </nav>
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-22558141-2']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-  <script>
-    if(!window.navigator.standalone) {
-      // Stuff here only loads if App is not in Fullscreen
-      document.write('<link href=\"./css/add2home.css\" rel=\"stylesheet\">')
-      document.write('<sc'+'ript src=\"./js/add2home.js\"><\/script>');
-      if(!(/iPad|iPod|iPhone|Android/).test(navigator.userAgent)) {
-        document.getElementById('preview').innerHTML = '<img src="./img/Icon-72@2x.png"><h1><strong>Kerny</strong> Open this link on your iPhone or iPad!</h1>';
-      } else {
-        document.getElementById('preview').innerHTML = '<img src="./img/Icon-72@2x.png"><h1><strong>Kerny</strong> Put it to your <br>Home Screen now!</h1>';
-      }
-    }
-  </script>
-  <script src="./js/shake.js"></script>
-  <script src="./js/tracking.js"></script>
-  <script src="./js/hammer.js"></script>
-  <script src="./js/app.js?201010"></script>
-  <script src="./js/importexport.js"></script>
-  <script src="./js/events.js?201011"></script>
 </body>
 </html>
