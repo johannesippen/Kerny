@@ -176,3 +176,18 @@ body[data-device=android] #spread {
 #theme-list button[data-theme=otama] {
   background-color: #859900;
 }
+
+/* President */
+.president #spread {
+  font-family: "Abraham Lincoln";
+  font-weight: normal;
+  background-color: #002b36;
+  color: #fdf6e3;
+}
+.president #spread strong {
+  font-weight: normal;
+  color: #93a1a1;
+}
+#theme-list button[data-theme=president] {
+  background-color: #002b36;
+}
